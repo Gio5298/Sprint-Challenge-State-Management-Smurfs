@@ -1,4 +1,4 @@
-import { SMURFS_LOAD_SUCCESS, SMURF_ADD_SUCCESS, } from './actions'
+import { SMURFS_LOAD_SUCCESS, SMURFS_ADD_SUCCESS, } from '../actions'
 
 const initialState = [];
 
@@ -8,7 +8,7 @@ export const AppReducer = (state = initialState, action) => {
     case SMURFS_LOAD_SUCCESS:
       return [...state, ...action.payload];
 
-    case SMURF_ADD_SUCCESS:
+    case SMURFS_ADD_SUCCESS:
       console.log(action.payload);
       return [...state, action.payload];
 

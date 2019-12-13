@@ -9,7 +9,7 @@ const Smurf = props => {
     <div className='smurfCard'>
       <h2>Name: {props.smurf.name}</h2>
       <p>Age: {props.smurf.age}</p>
-      <p>Height: {props.amurf.height}</p>
+      <p>Height: {props.smurf.height}</p>
     </div>
   );
 };
